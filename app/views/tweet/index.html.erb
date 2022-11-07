@@ -1,0 +1,18 @@
+ここがトップページです
+
+
+
+<div class="card">
+  <% @tweets.each do |tweet| %>
+        <ul class = "card_lists">
+          <li><%= image_tag tweet.image, class: :card__img  %></p>
+              <div> タイトル</div>
+              <%= tweet.title%></p>
+              <div> ニックネーム</div>
+              <%= tweet.nickname%></p>
+              <div> コンセプト</div>
+              <%= tweet.concept%></p>
+            </li>
+        </ul>
+    <% end %>
+</div>
