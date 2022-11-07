@@ -1,0 +1,19 @@
+img{
+  height: 200px;
+  width: 200px;
+}
+
+ul,li{
+ list-style: none; 
+}
+
+.field{
+
+}
+
+@media screen and (max-width:768px){
+  .field{
+    min-width: 100%;
+  }
+}
+
