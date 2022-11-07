@@ -8,7 +8,7 @@ ul,li{
 }
 
 .field{
-
+  font-size: 50px;
 }
 
 @media screen and (max-width:768px){
@@ -17,3 +17,26 @@ ul,li{
   }
 }
 
+#tweet_title{
+  height: 30px;
+  width: 200px;
+}
+
+#tweet_nickname{
+  height: 30px;
+  width: 200px;
+}
+
+#tweet_concept{
+  height: 100px;
+  width: 400px;
+}
+#tweet_image{
+  height: 30px;
+  width: 200px;
+}
+
+.card{
+  display: flex;
+  justify-content: space-around;
+}
