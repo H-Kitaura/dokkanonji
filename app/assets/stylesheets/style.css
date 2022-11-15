@@ -9,11 +9,13 @@ ul,li{
 
 .field{
   font-size: 20px;
+  padding: 10px
 }
 
 @media screen and (max-width:768px){
   .field{
     min-width: 100%;
+    padding: 10px
   }
 }
 
@@ -50,4 +52,12 @@ ul,li{
 .show-image{
   width: 500px;
   height: 500px;
+}
+
+html{
+  background-color: yellow;
+}
+
+.actions{
+  padding: 10px;
 }

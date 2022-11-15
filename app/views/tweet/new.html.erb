@@ -1,35 +1,35 @@
 <div class="main">
   <div class="inner">
     <div class="form__wrapper">
-      <h2 class="page-heading">こちらにご投稿お願いします。</h2>
+        <%= image_tag 'dokkanonji-image.png',class:"top-image"%>
         <%# 部分テンプレートでフォームを表示する %>
+
+
+    <%= form_with url: tweet_index_path, model: @tweet, local: true do |f|%>
+      <div class="field">
+        <%= f.label :nickname, "ニックネーム" %><br />
+        <%= f.text_field :nickname, class: :form__text, id:"tweet_nickname" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :image, "写真を選択してください" %><br />
+        <%= f.file_field :image, id:"tweet_image" %>
+      </div>
+
+
+      <div class="field">
+        <%= f.label :concept, "本日の物産展についてご意見・ご感想をお聞かせください" %><br />
+        <%= f.text_area :concept, class: :form__text, id:"tweet_concept" %>
+      </div>
+
+     
+
+      <div class="actions">
+        <%= f.submit "送信する", class: :form__btn  %>
+      </div>
+    <% end %>
+
+
     </div>
   </div>
 </div>
-
-
-<%= form_with url: tweet_index_path, model: @tweet, local: true do |f|%>
-  <div class="field">
-    <%= f.label :title, "タイトル" %><br />
-    <%= f.text_field :title, id:"tweet_title" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :nickname, "ニックネーム" %><br />
-    <%= f.text_field :nickname, class: :form__text, id:"tweet_nickname" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :concept, "コンセプト" %><br />
-    <%= f.text_area :concept, class: :form__text, id:"tweet_concept" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :image, "投稿画像" %><br />
-    <%= f.file_field :image, id:"tweet_image" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "保存する", class: :form__btn  %>
-  </div>
-<% end %>

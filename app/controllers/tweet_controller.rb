@@ -22,7 +22,7 @@ end
   private
 
   def tweet_params
-    params.require(:tweet).permit(:title,:nickname, :concept, :image)
+    params.require(:tweet).permit(:nickname, :concept, :image)
   end
 
 
