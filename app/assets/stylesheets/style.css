@@ -8,7 +8,7 @@ ul,li{
 }
 
 .field{
-  font-size: 50px;
+  font-size: 20px;
 }
 
 @media screen and (max-width:768px){
@@ -39,4 +39,15 @@ ul,li{
 .card{
   display: flex;
   justify-content: space-around;
+}
+
+.show{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.show-image{
+  width: 500px;
+  height: 500px;
 }
